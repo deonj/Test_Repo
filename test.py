@@ -145,17 +145,18 @@ root = Tk()
 root.title("RDRT Parser v1.0")
 root.geometry("400x300")
 root.resizable(0,0)
+root.configure(bg="PaleGreen3")
 #root.call('wm', 'iconphoto', root._w, PhotoImage(file='bin/icon.png')) # window icon
 
 label_str = StringVar() # variable to change the label text displayed
 label_str.set("Waiting for file....")
-feedback_label = Label(root, textvariable=label_str, fg="red")
+feedback_label = Label(root, textvariable=label_str, bg="PaleGreen3", fg="red")
 feedback_label.pack()
 
-frame_separator = Frame(relief=SUNKEN, borderwidth=1)
+frame_separator = Frame(relief=SUNKEN, borderwidth=1, bg="PaleGreen4")
 frame_separator.pack(fill=BOTH, expand=True)
 
-start_button = Button(root, text="Start", command=button_click)
+start_button = Button(root, bg="SeaGreen1", relief="raised", text="Start", command=button_click)
 start_button.pack()
 
 menu = Menu(root)
