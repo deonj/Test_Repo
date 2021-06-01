@@ -10,7 +10,6 @@ from openpyxl.styles import Alignment, Font, PatternFill
 from datetime import date
 
 #### added to branch
-# New change
 
 def get_section(lists, out_file_path, is_header, header, regex):
     
