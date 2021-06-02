@@ -1,3 +1,4 @@
+import re
 import argparse
 import os
 from tkinter import filedialog
@@ -16,7 +17,9 @@ from datetime import date
 ### second branch feature
 ### added another feature
 
-### thitd branch deleted import re
+### third branch deleted import re
+
+### fourth branch fixed spelling and re-added import re
 
 def get_section(lists, out_file_path, is_header, header, regex):
     
