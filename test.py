@@ -9,17 +9,7 @@ from openpyxl import load_workbook
 from openpyxl.styles import Alignment, Font, PatternFill
 from datetime import date
 
-#### added to first branch
-### This would be my changes to add
-### Added a new feature to first_branch
-
-### Added a second branch
-### second branch feature
-### added another feature
-
-### third branch deleted import re
-
-### fourth branch fixed spelling and re-added import re
+### fifth branch erased all previous branch comments
 
 def get_section(lists, out_file_path, is_header, header, regex):
     
