@@ -11,6 +11,7 @@ from datetime import date
 
 #### added to first branch
 ### This would be my changes to add
+### Added a new feature to first_branch
 
 def get_section(lists, out_file_path, is_header, header, regex):
     
