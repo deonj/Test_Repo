@@ -13,6 +13,9 @@ from datetime import date
 ### This would be my changes to add
 ### Added a new feature to first_branch
 
+### Added a second branch
+### second branch feature
+
 def get_section(lists, out_file_path, is_header, header, regex):
     
     output_list_str = []
