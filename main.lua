@@ -1,4 +1,4 @@
-local m = require("Modules_OOP.Mod")
+local m = require("Mod")
 -- Print class value
 print("Class value = " ..m.num)
 -- Create a new instance of the object
