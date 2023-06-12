@@ -1,11 +1,12 @@
 local Mod = {}
 
-Mod.num = 7
+-- Mod.num = 7 -- 'class' variable
 
-function Mod:new(o)
+function Mod:new(o,num)
 	o = o or {}
 	self.__index = self
 	setmetatable(o,self)
+	self.num = num or 0
 	return o
 end
 
