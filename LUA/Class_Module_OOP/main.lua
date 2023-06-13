@@ -9,7 +9,6 @@ print("Instance Value = " .. n.num)
 print("Instance Value = " .. n2.num)
 -- Call the instance method
 n:addOne()
-n2:addOne()
 -- Print values for the initial value and the instance value
 print("Instance Value = " .. n.num) -- should be incremented by one
 print("Instance Value = " .. n2.num)

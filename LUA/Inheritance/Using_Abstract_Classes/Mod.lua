@@ -9,5 +9,5 @@ end
 
 return Mod
 
--- This is an abstract base class since there is no constructor
--- All child classes will inherit from this abstract class
+-- This is an abstract base class since there is no constructor.
+-- All child classes will inherit from this abstract class.
