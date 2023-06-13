@@ -2,17 +2,17 @@ local m = require("Mod")
 
 local ChildMod = {}
 
-function ChildMod:new(num)
-    local o = setmetatable({}, self)
-    self.__index = m
-    self.num = num
+function ChildMod:new(obj)
+    local o = obj or {}
+    setmetatable(o, self)
+    self.__index = m -- Key line here. Set __index to the base class
     return o
 end
 
--- function ChildMod:addTwo()
---     self.num2 = self.num2 + 2
---     return self.num2
--- end
+function ChildMod:addOne()
+    print("Adding locally one ...")
+	self.num = self.num - 1
+end
 
 return ChildMod
 
