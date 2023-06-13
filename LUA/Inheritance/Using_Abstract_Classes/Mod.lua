@@ -4,7 +4,7 @@ Mod.__index = Mod
 
 function Mod:addOne()
     print("Adding one ...")
-	self.num = self.num + 1
+	-- self.num = self.num + 1
 end
 
 return Mod

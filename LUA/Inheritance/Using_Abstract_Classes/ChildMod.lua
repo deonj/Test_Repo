@@ -4,8 +4,8 @@ local ChildMod = {}
 
 function ChildMod:new(num)
     local o = setmetatable(self, m)
-    self.__index = self
-    self.num = num or 0
+    self.__index = m
+    self.num = num
     return o
 end
 
