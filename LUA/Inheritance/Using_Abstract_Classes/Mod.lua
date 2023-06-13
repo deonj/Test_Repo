@@ -1,10 +1,11 @@
 local Mod = {}
 
 Mod.__index = Mod
+Mod.num = 0
 
 function Mod:addOne()
     print("Adding one ...")
-	-- self.num = self.num + 1
+	self.num = self.num + 1
 end
 
 return Mod

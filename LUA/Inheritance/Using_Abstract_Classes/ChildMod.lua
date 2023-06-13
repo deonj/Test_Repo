@@ -2,12 +2,10 @@ local m = require("Mod")
 
 local ChildMod = {}
 
-ChildMod.__index = m
-
 function ChildMod:new(num)
     local o = setmetatable({}, self)
-    self.__index = self
-    self.num = num or 0
+    self.__index = m
+    self.num = num
     return o
 end
 
