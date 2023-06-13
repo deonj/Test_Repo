@@ -2,14 +2,10 @@ local m = require("Mod")
 
 local ChildMod = {}
 
-ChildMod.__index = ChildMod
-setmetatable(ChildMod, m)
-
-function ChildMod:new(obj, cnum)
-    local o = obj or {}
-    setmetatable(o, self)
+function ChildMod:new(num)
+    local o = setmetatable(self, m)
     self.__index = self
-    self.cnum = cnum or 0
+    self.num = num or 0
     return o
 end
 
