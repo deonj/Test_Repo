@@ -1,22 +1,10 @@
-local Account = {balance = 0}
- 
-function Account:new (o)
-    o = o or {}
-    self.__index = self
-    setmetatable(o, self)
-    return o
-end
+local m1 = require("ChildMod")
 
-function Account:deposit (v)
-    self.balance = self.balance + v
-end
-
-function Account:withdraw (v)
-    if v > self.balance then 
-        error"insufficient funds" 
-    end
-    self.balance = self.balance - v
-end
-
-local SpecialAccount = Account:new()
-local s = SpecialAccount:new{limit=1000.00}
+local ch = m1:new({num = 7})
+local ch2 =m1:new({num = 8})
+print("Instance Value ch = " .. ch.num)
+print("Instance Value ch2 = " .. ch2.num)
+ch:addOne()
+ch2:addOne()
+print("Instance Value ch = " .. ch.num)
+print("Instance Value ch2 = " .. ch2.num)
