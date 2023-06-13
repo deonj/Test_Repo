@@ -4,8 +4,8 @@ local Mod = {}
 
 function Mod:new(obj,num)
 	local o = obj or {}
-	self.__index = self
 	setmetatable(o,self)
+	self.__index = self
 	self.num = num or 0
 	return o
 end
