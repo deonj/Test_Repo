@@ -2,8 +2,8 @@ local Mod = {}
 
 -- Mod.num = 7 -- 'class' variable
 
-function Mod:new(o,num)
-	local o = o or {}
+function Mod:new(obj,num)
+	local o = obj or {}
 	self.__index = self
 	setmetatable(o,self)
 	self.num = num or 0
