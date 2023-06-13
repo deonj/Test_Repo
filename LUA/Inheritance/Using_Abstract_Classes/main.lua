@@ -1,6 +1,6 @@
 local m1 = require("ChildMod")
 
-local ch = m1:new({num = 7, test = "yes"})
+local ch = m1:new({num = 7})
 local ch2 =m1:new({num = 8})
 print("Instance Value ch = " .. ch.num)
 print("Instance Value ch2 = " .. ch2.num)
