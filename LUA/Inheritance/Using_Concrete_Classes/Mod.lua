@@ -1,7 +1,11 @@
 local Mod = {}
 
--- since this is a base class with no constructor, set the __index to itself
-Mod.__index = Mod 
+function Mod:new(obj)
+    local o = obj or {}
+    setmetatable(o, self)
+    self.__index = self
+    return o
+end
 
 function Mod:addOne()
     print("Adding one ...")
@@ -10,5 +14,5 @@ end
 
 return Mod
 
--- This is an abstract base class since there is no constructor.
--- All child classes will inherit from this abstract class.
+-- This is a concrete base class.
+-- All child classes will inherit from this class.

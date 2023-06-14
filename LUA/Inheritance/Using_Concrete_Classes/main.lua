@@ -1,7 +1,7 @@
 local m1 = require("ChildMod")
 
-local ch = m1:new({num = 7})
-local ch2 =m1:new({num = 8})
+local ch = m1:new({num = 7, test="test"})
+local ch2 =m1:new({num = 8, test = "test2"})
 print("Instance Value ch = " .. ch.num)
 print("Instance Value ch2 = " .. ch2.num)
 ch:addOne()
