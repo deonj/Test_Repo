@@ -5,7 +5,7 @@ local m = require("Mod")
 local ChildMod = m:new()
 
 -- This 'new' method overrides the base class 'new' method
--- This can be done if the child class constructor needs to extended with new fields (e.g. obj.test)
+-- This can be done if the child class constructor needs to extended with addtional parameters (e.g. obj.test)
 function ChildMod:new(obj)
     local o = obj or {}
     setmetatable(o, self)

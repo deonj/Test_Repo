@@ -1,7 +1,7 @@
 local Mod = {}
 
 -- since this is a base class with no constructor, set the __index to itself
-Mod.__index = Mod 
+Mod.__index = Mod
 
 function Mod:addOne()
     print("Adding one ...")

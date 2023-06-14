@@ -14,5 +14,5 @@ end
 
 return Mod
 
--- This is a concrete base class.
+-- This is a concrete base class that can be instantiated.
 -- All child classes will inherit from this class.
